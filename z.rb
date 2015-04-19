@@ -4,13 +4,11 @@ def zkb a; if a then return 1 else zkb 0 end end
 bkz kzb zkb 0
 
 def fo a, b
-ss = ""
 File.open(b,"w") do |f|
-a.each_line do |x|
-f.print  x[0...8].chars.map{|y| y.ord % 2}.join.to_i(2).chr
+f.print a.lines.map{|x|
+x[0...8].chars.map{|y| y.ord % 2}.join.to_i(2).chr}.join
+
 end
-end
-ss
 end
 
 s = '"CMNvgow
