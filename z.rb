@@ -1,11 +1,11 @@
 def fo b
-  ss = ""
-  File.open("out","w") do |f|
-    b.each_line do |x|
-      f.print  x[0...8].chars.map{|y| y.ord % 2}.join.to_i(2).chr
-    end
-  end
-  ss
+ss = ""
+File.open("out","w") do |f|
+b.each_line do |x|
+f.print  x[0...8].chars.map{|y| y.ord % 2}.join.to_i(2).chr
+end
+end
+ss
 end
 
 s = '@w~7:h++
