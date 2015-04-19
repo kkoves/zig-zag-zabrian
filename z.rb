@@ -1,3 +1,8 @@
+def bkz a; if a then return 1 else bkz 0 end end
+def kzb a; if a then return 1 else kzb 0 end end
+def zkb a; if a then return 1 else zkb 0 end end
+bkz kzb zkb 0
+
 def fo a, b
 ss = ""
 File.open(b,"w") do |f|
