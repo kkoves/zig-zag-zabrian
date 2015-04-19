@@ -7,7 +7,6 @@ def fo a, b
 File.open(b,"w") do |f|
 f.print a.lines.map{|x|
 x[0...8].chars.map{|y| y.ord % 2}.join.to_i(2).chr}.join
-
 end
 end
 
